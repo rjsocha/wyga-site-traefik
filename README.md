@@ -19,10 +19,11 @@ Please use the wyga-site project for a more user-friendly experience: [wyga-site
 {{- $item := 0 -}}
 {{- range $host := mustRegexSplit "," (index .Labels "wyga.expose") -1 -}}
   {{- $host = trim $host -}}
-  {{- if contains "." $host -}}
+  {{- if ne $host "" -}}
     {{- $name := regexFind `^([^.]+)` $host -}}
     {{- $domain := regexFind `\.(.+)$` $host -}}
     {{- $domain = trimAll "." $domain -}}
+    {{- if eq $domain "" -}}{{- $domain = "wyga.site" -}}{{- end -}}
     {{- $wildcard := false -}}
     {{- if hasSuffix "*" $name -}}{{- $wildcard = true -}}{{- end -}}
     {{- $name = trimSuffix "*" $name -}}
