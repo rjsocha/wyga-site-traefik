@@ -4,9 +4,15 @@ The WYGA Site Local Gateway is a Traefik image with integrated certificates desi
 
 ## Certificates
 
+wyga.site
 ```
-notBefore=Nov 18 20:37:36 2023 GMT
-notAfter=Feb 16 20:37:35 2024 GMT
+notBefore=Nov 30 23:30:04 2023 GMT
+notAfter=Feb 28 23:30:03 2024 GMT
+```
+e.wyga.site
+```
+notBefore=Dec  1 02:17:48 2023 GMT
+notAfter=Feb 29 02:17:47 2024 GMT
 ```
 
 ## Usage

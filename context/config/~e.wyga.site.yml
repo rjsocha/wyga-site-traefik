@@ -1,0 +1,6 @@
+tls:
+  certificates:
+    - certFile: /config/tls/e.wyga.site.pem
+      keyFile:  /config/tls/e.wyga.site.key
+      stores:
+       - default
