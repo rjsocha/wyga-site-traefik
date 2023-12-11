@@ -1,7 +1,7 @@
 {{- $dashboard := true -}}
 {{- $dashboard_host := env "WYGA_SITE_DASHBOARD" -}}
 {{- $dashboard_https := true -}}
-{{- if eq $dashboard_host "disabled" -}}
+{{- if eq $dashboard_host "" -}}
 {{- $dashboard = false -}}
 {{- end -}}
 {{- if $dashboard -}}
