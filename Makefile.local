@@ -1,5 +1,5 @@
 REGISTRY  ?= wyga/wyga-site
-UPSTREAM  ?= traefik:2.10
+UPSTREAM  ?= traefik:latest
 PLATFORMS ?= linux/amd64
 OUTPUT = type=docker,compression=gzip,compression-level=9
 BUILDER = multiplatform-builder
