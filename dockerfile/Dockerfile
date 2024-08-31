@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1
+# syntax=docker/dockerfile:1.9
 ARG UPSTREAM
 FROM alpine:3 AS mold
 COPY tls/ /mold/config/tls/
